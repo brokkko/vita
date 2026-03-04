@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя Розовая Книга</title>
     <style>
-        /* --- НАСТРОЙКИ ФОНА --- */
         body {
             display: flex;
             justify-content: center;
@@ -43,7 +42,6 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* --- АДАПТИВНАЯ КНИГА --- */
         .book {
             position: relative;
             width: 90vw;
@@ -65,8 +63,7 @@
             cursor: pointer;
             border-radius: 4px 12px 12px 4px;
 
-            /* ЦВЕТ ОБРАТНОЙ СТОРОНЫ СТРАНИЦЫ */
-            background-color: #ffded2; /* Белый цвет "бумаги" */
+            background-color: #ffded2;
 
             box-shadow: inset -5px 0 10px rgba(0,0,0,0.05);
         }
@@ -78,7 +75,6 @@
             border-radius: 4px 12px 12px 4px;
             display: block;
 
-            /* СКРЫВАЕМ КАРТИНКУ С ОБРАТНОЙ СТОРОНЫ */
             backface-visibility: hidden;
             -webkit-backface-visibility: hidden;
         }
@@ -87,7 +83,6 @@
             transform: rotateY(-180deg);
         }
 
-        /* Слои страниц */
         #p1 { z-index: 7; }
         #p2 { z-index: 6; }
         #p3 { z-index: 5; }
@@ -96,7 +91,6 @@
         #p6 { z-index: 2; }
         #p7 { z-index: 1; }
 
-        /* --- КНОПКИ --- */
         .controls {
             position: absolute;
             bottom: 40px;
@@ -146,26 +140,25 @@
 
 <div class="book">
     <div class="page" id="p1">
-        <img src="/data/page 1.png" alt="Страница 1">
+        <img src="/data/page1.png" alt="Страница 1">
     </div>
     <div class="page" id="p2">
-        <img src="/data/page 2.png" alt="Страница 2">
+        <img src="/data/page2.png" alt="Страница 2">
     </div>
     <div class="page" id="p3">
-        <img src="/data/page 3.png" alt="Страница 3">
+        <img src="/data/page3.png" alt="Страница 3">
     </div>
     <div class="page" id="p4">
-        <img src="/data/page 4.png" alt="Страница 4">
+        <img src="/data/page4.png" alt="Страница 4">
     </div>
     <div class="page" id="p5">
-        <img src="/data/page 5.png" alt="Страница 5">
+        <img src="/data/page5.png" alt="Страница 5">
     </div>
     <div class="page" id="p6">
-        <img src="/data/page 6.png" alt="Страница 6">
+        <img src="/data/page6.png" alt="Страница 6">
     </div>
-    <!-- Исправила ID на p7, чтобы не было дублей -->
     <div class="page" id="p7">
-        <img src="/data/page 7.png" alt="Страница 7">
+        <img src="/data/page7.png" alt="Страница 7">
     </div>
 </div>
 
